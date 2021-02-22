@@ -135,28 +135,33 @@ Navigate to ``` Tomcat/bin ``` and then Execute the ``` startup.sh ``` script fo
 You have to change the server's port to to ``` :8081 ```
 ##### 3. Change the Database path
 In the package ``` elbiscms ```, class ``` sqlConnection ``` you have to change the Databse path according to the location on your computer.
-So at the line 20 
+So at the line 27 
 ```ruby
-17  public static Connection connect() {
-18	    	Connection connect = null;
-19		    try {
-20			    String dbPath = "Users/mohammedalianis/Desktop/ProPraEdited.db";
-21			    connect = DriverManager.getConnection("jdbc:sqlite:/"+ dbPath);
-22		    } catch (Exception e) {
-23			    e.printStackTrace();
-24		    }
-25		    return connect;
-26	    }
+21  public static Connection connect() {
+22
+23	    	Connection connect = null;
+24
+25		    try {
+26			    // Change the Databse path according to the location on your computer 
+27			    String dbPath = "C:/Users/SAR/Desktop/ProPraEdited.db";
+28			    connect = DriverManager.getConnection("jdbc:sqlite:/"+ dbPath);
+29
+30		    } catch (Exception e) {
+31			    e.printStackTrace();
+32		    }
+33		    return connect;
+34
+35	    }
 ```
 ##### 4. Change the PDF Folder path
 In the package ``` elbiscms ```, class ``` ConverteHTMLtoPDF ``` you have to change the PDF Folder path according to the location on your computer.
-So at the line 20 
+So at the line 42 
 ```ruby
 29  public void converte(String title,String content,String subsection,String from) throws IOException {
     ...
 36		try {
 41			String temp = "";
-42			String path = "/Users/mohammedalianis/Desktop/Project 2 _ Updated Version/pdf";
+42			String path = "D:/eclipse-workspace/Project2/pdf";
 43			File file = new File(path);
 44			String absolutePath = file.getAbsolutePath();
 45			File theDir = new File(absolutePath + "/" + subsection);
