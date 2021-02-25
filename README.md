@@ -40,7 +40,7 @@ Some JAR Files has been used like
 4. html2pdf-3.0.2.jar
 5. ...
 
-to download it please [click here](https://drive.google.com/drive/folders/1k3KljEMjV2-a3GriJ4kH2zjikJbGjsDd?usp=sharing).
+to download it please [click here](https://drive.google.com/drive/folders/1o6L4SXZmnuRZG75BX3GusjcYNLollfAk).
 
 ### Database :
 here is the SQL File to create the database
@@ -125,7 +125,7 @@ INSERT INTO "Role" VALUES (1,'Admin');
 INSERT INTO "Role" VALUES (2,'Redakteur');
 INSERT INTO "Role" VALUES (3,'Benutzer');
 ```
-or by clicking [here](https://drive.google.com/drive/folders/1ayJVX_Q5EvhWqzcnioRuzQOdMRx35_4o?usp=sharing) you can download it as ``` .db ``` file
+or by clicking [here](https://drive.google.com/drive/folders/1hQGUHXy8iL83KbLmnDWlWyA64b82prCJ) you can download it as ``` .db ``` file
 
 ### Launching :
 
